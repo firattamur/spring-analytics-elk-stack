@@ -1,22 +1,30 @@
 # 🎮 Game Analytics with ELK Stack and Spring Boot 🌿
 
-This project demonstrates how to implement a game analytics microservice for a match-3 game using Spring Boot and the ELK Stack (Elasticsearch, Logstash, and Kibana). The microservice captures game events and logs them directly to Elasticsearch for storage, indexing, and analysis.
+This project demonstrates how to implement a game analytics microservice for a match-3 game using Spring Boot and the
+ELK Stack (Elasticsearch, Logstash, and Kibana). The microservice captures game events and logs them directly to
+Elasticsearch for storage, indexing, and analysis.
 
 ## 📑 Project Overview
 
-The project focuses on capturing, storing, and analyzing various game events, such as player moves, level completion, power-up usage, and in-game purchases. The game analytics microservice uses the ELK Stack to efficiently store and analyze these events, providing insights into player behavior, game mechanics, and overall game performance.
+The project focuses on capturing, storing, and analyzing various game events, such as player moves, level completion,
+power-up usage, and in-game purchases. The game analytics microservice uses the ELK Stack to efficiently store and
+analyze these events, providing insights into player behavior, game mechanics, and overall game performance.
 
 The main components of the project are:
 
-- **Spring Boot Application**: A Java-based Spring Boot application that exposes API endpoints for logging game events and sends them to Elasticsearch.
-- **ELK Stack**: Elasticsearch, Logstash, and Kibana are used for storing, processing, and visualizing game event data. Elasticsearch serves as the primary data store for game events, while Kibana provides a user-friendly interface for analyzing and visualizing the data.
+- **Spring Boot Application**: A Java-based Spring Boot application that exposes API endpoints for logging game events
+  and sends them to Elasticsearch.
+- **ELK Stack**: Elasticsearch, Logstash, and Kibana are used for storing, processing, and visualizing game event data.
+  Elasticsearch serves as the primary data store for game events, while Kibana provides a user-friendly interface for
+  analyzing and visualizing the data.
 
 ## 🏗️ Architecture
 
 The architecture of the project comprises the following components:
 
 1. **Game Client**: The match-3 game client sends game events to the Spring Boot application through API endpoints.
-2. **Spring Boot Application**: The game analytics microservice receives game events, processes them, and logs them directly to Elasticsearch.
+2. **Spring Boot Application**: The game analytics microservice receives game events, processes them, and logs them
+   directly to Elasticsearch.
 3. **Elasticsearch**: Stores and indexes game events for efficient search and analysis.
 4. **Kibana**: Provides a user interface for analyzing and visualizing game event data stored in Elasticsearch.
 
